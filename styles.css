@@ -4,7 +4,7 @@
 }
 
 html {
-  font-family: system ui;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -20,4 +20,6 @@ input,
 button {
   font: inherit;
   border-radius: 25px;
+  background-color: #ed6436;
+  color: #ffffff;
 }
