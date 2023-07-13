@@ -60,7 +60,8 @@ button {
 }
 
 .main__container__text__area__claim {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  padding: 5px;
   margin: 0;
 }
 
@@ -82,18 +83,24 @@ button {
 .button {
   border-radius: 0px 25px 25px 20px;
   padding: 0.8rem;
-  width: 40%;
+  width: 8rem;
   height: 10%;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.card {
+.button:hover {
+  box-shadow: 2px;
+  border: #ffffff;
+}
+
+.card__images {
   width: 300px;
   border-radius: 25px;
   border: transparent 2px;
   padding: 5px;
   filter: brightness(70%);
+  position: relative;
 }
 
 .activity {
@@ -157,11 +164,133 @@ button {
   font-size: 0.9rem;
 }
 
-@media only screen and (min-width: 767px) (max-width: 1581px) {
+@media (min-width: 562px) {
   body {
     width: 100%;
+    height: 100%;
   }
-  img {
-    width: 100px;
+
+  .main__container__text__area {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main__container__text__area__title {
+    color: #ed6436;
+    font-size: 1.1rem;
+    padding: 15px;
+    margin: auto;
+    margin: 0;
+    font-weight: 800;
+  }
+
+  .main__container__text__area__claim {
+    font-size: 2.8rem;
+    padding: 5px;
+    margin: 0;
+    font-weight: bolder;
+  }
+
+  .activities__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card__images {
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+  }
+
+  .activity {
+    position: relative;
+  }
+
+  .activity__text {
+    display: none;
+    position: absolute;
+    color: white;
+    left: 6.5rem;
+    bottom: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .activity__text--hover:hover {
+    display: none;
+    position: absolute;
+    color: white;
+    left: 6.5rem;
+    bottom: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .activity__text__name {
+    font-size: 0.7rem;
+  }
+
+  .activity__text__activity__1 {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .activity__text__2--hover {
+    filter: brightness(50%);
+    display: flex;
+    position: absolute;
+    color: white;
+    inset: 0;
+    background-color: #ed6436;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .activity__text__2 {
+    display: none;
+    position: absolute;
+    color: white;
+    left: 6.5rem;
+    bottom: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .activity__text__name__2 {
+    font-size: 0.7rem;
+  }
+
+  .activity__text__2__activity__2 {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .activity__text__3 {
+    display: none;
+    position: absolute;
+    color: white;
+    left: 6.5rem;
+    bottom: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .activity__text__3__name {
+    font-size: 0.7rem;
+  }
+
+  .activity__text__3__activity__3 {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .activity__text__3--hover:hover {
   }
 }
