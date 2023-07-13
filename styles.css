@@ -4,12 +4,13 @@
 }
 
 html {
-  font-family: system ui;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
   margin: 0;
   font-size: 1.5rem;
+  min-height: 100vh;
 }
 
 a {
@@ -20,4 +21,21 @@ input,
 button {
   font: inherit;
   border-radius: 25px;
+  background-color: #ed6436;
+  color: #ffffff;
+}
+
+.container {
+}
+
+.container__title {
+}
+
+.container__claim {
+}
+
+.container__button {
+}
+
+.activities__list {
 }
